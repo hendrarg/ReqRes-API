@@ -1,0 +1,27 @@
+info:
+  name: Update User
+  type: http
+  seq: 4
+
+http:
+  method: put
+  url: https://reqres.in/api/users/2
+  headers:
+    - name: x-api-key
+      value: free_user_3CO4gRX8WiMsAeqp1WcQiafcVON
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "name": "morpheus",
+        "job": "zion resident"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

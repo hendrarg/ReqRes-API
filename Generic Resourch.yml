@@ -1,0 +1,22 @@
+info:
+  name: Generic Resourch
+  type: http
+  seq: 7
+
+http:
+  method: get
+  url: https://reqres.in/api/products?page=1
+  headers:
+    - name: x-api-key
+      value: free_user_3CO4gRX8WiMsAeqp1WcQiafcVON
+  params:
+    - name: page
+      value: "1"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
